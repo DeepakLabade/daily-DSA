@@ -25,6 +25,7 @@ public class QueueUsingLL {
             Node newNode = new Node(data);
             if(front == null || rear == null) {
                 front = rear = newNode;
+                return;
             }
             rear.next = newNode;
             rear = newNode;
