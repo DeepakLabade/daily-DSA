@@ -45,7 +45,6 @@ public class AddOneToLL {
         list.append(1);
         list.append(2);
         list.print();
-        addOne(head);
         list.print();
     }
 }
