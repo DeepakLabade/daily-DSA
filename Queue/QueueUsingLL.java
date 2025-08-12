@@ -14,14 +14,14 @@ public class QueueUsingLL {
         static Node front = null;
         static Node rear = null;
         
-        public static boolean isEmpty() {
+        public boolean isEmpty() {
             if(front == null) {
                 return true;
             }
             return false;
         }
 
-        public static void enque(int data) {
+        public void enque(int data) {
             Node newNode = new Node(data);
             if(front == null || rear == null) {
                 front = rear = newNode;
@@ -31,14 +31,14 @@ public class QueueUsingLL {
             rear = newNode;
         }
 
-        public static int peek() {
+        public int peek() {
             if(front == null) {
                 return -1;
             }
             return front.data;
         }
 
-        public static int dequeue() {
+        public int dequeue() {
             if(front == null) {
                 return -1;
             }

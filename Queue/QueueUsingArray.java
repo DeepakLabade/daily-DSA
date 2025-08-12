@@ -16,7 +16,7 @@ public class QueueUsingArray {
             return rear == -1;
         }
 
-        public static void enque(int data) {
+        public void enque(int data) {
             if(rear == size-1) {
                 System.out.println("the queue is full");
                 return;
@@ -26,7 +26,7 @@ public class QueueUsingArray {
             arr[rear] = data;
         }
 
-        public static int peek() {
+        public int peek() {
             if(rear == -1) {
                 System.out.println("the queue is empty");
                 return -1;
@@ -35,7 +35,7 @@ public class QueueUsingArray {
             return arr[0];
         }
 
-        public static int remove() {
+        public int remove() {
             if(rear == -1) {
                 System.out.println("the queue is empty");
                 return -1;

@@ -3,24 +3,24 @@ import java.util.ArrayList;
 public class StackUsingArrayList {
     static class Stack {
         static ArrayList<Integer> list = new ArrayList<>();
-        public static void push(int data) {
+        public void push(int data) {
             list.add(data);
         }
 
-        public static boolean isEmpty() {
+        public boolean isEmpty() {
             if(list.size() == 0) {
                 return true;
             }
             return false;
         }
 
-        public static int pop() {
+        public int pop() {
             int top = list.get(list.size() - 1);
             list.remove(list.size() - 1);
             return top;
         }
 
-        public static int peek() {
+        public int peek() {
             return list.get(list.size() - 1 );
         }
     }
